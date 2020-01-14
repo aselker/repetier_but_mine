@@ -171,7 +171,7 @@
 
 // ################# XYZ movements ###################
 
-#define AXESMAXLENGTH 259.1  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#define AXESMAXLENGTH 258.8  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #define X_ENABLE_ON 0
 #define Y_ENABLE_ON 0
 #define Z_ENABLE_ON 0
@@ -203,7 +203,7 @@
 #define DELTA_SEGMENTS_PER_SECOND_MOVE 70 // Less accurate setting for other moves
 
 // Delta settings
-#define DELTA_DIAGONAL_ROD /*267*/ 287 * SIZE_MULTIPLIER // mm
+#define DELTA_DIAGONAL_ROD 287 * SIZE_MULTIPLIER // mm -- was 267
 #define DELTA_ALPHA_A 210
 #define DELTA_ALPHA_B 330
 #define DELTA_ALPHA_C 90
@@ -255,9 +255,9 @@
 #define ALLOW_QUADSTEPPING 1
 #define DOUBLE_STEP_DELAY 1 // time in microseconds
 #define MAX_HALFSTEP_INTERVAL 1999
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 1000 //1500 seems about good, occasional layer shift
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 1000
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 1000
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 1300 // 1500 seems about good, occasional layer shift
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 1300 // 1000 works perfectly
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 1300
 #define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_X 800 //1200 original, I think
 #define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Y 800
 #define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Z 800
